@@ -1,0 +1,1 @@
+# fast-click-by-mouse
