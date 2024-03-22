@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鼠标点击计数器</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        #clickArea {
+            padding: 20px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="clickArea">点击我！当前点击次数：0</div>
+
+    <script>
+        let clickCount = 0;
+
+        document.getElementById('clickArea').addEventListener('click', function () {
+            clickCount++;
+            this.textContent = `点击我！当前点击次数：${clickCount}`;
+        });
+    </script>
+</body>
+</html>
